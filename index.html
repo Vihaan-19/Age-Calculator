@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- <link rel="stylesheet" href="https://fonts.google.com/specimen/Poppins"> -->
+  <title>Age Calculator Website</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="date-container">
+    <div class="day-div">
+      <p>DAY</p>
+      <!-- Maxlength attribute very helpful to restrict characters in the input field -->
+      <input type="text" placeholder="DD" id="day" maxlength="2">
+    </div>
+
+    <div class="month-div">
+      <p>MONTH</p>
+      <input type="text" placeholder="MM" id="month" maxlength="2">
+    </div>
+
+    <div class="year-div">
+      <p>YEAR</p>
+      <input type="text" placeholder="YYYY" id="year" maxlength="4">
+    </div>
+    <p id="validator">Enter Valid Date</p>
+    <br>
+    <hr>
+    <button id="calc-btn"><img src="./assets/images/icon-arrow.svg" alt="downward arrow"></button>
+
+    <div class="display">
+      <p ><span id="display-years">--</span> years</p>
+      <p ><span id="display-months">--</span> months</p>
+      <p ><span id="display-days">--</span> days</p>
+    </div>
+
+  </div>
+
+
+  <div class="attribution">
+    <p>Coded by <a href="https://github.com/Vihaan-19">Vihaan</a>.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
