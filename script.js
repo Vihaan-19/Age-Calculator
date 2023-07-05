@@ -93,7 +93,8 @@ submit.addEventListener("click", () => {
 
 
     console.log('Input is Correct');
-   
+    validator.style.display="none";
+    
     if (cd < d) {
         // borrow days from february
         if (cm == 3) {
